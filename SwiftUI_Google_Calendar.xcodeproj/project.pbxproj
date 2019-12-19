@@ -18,6 +18,7 @@
 		31F69F2923AAEEFD005DB1D3 /* GetCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F69F2823AAEEFD005DB1D3 /* GetCalendar.swift */; };
 		31F69F2B23AAEF87005DB1D3 /* CalendarRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F69F2A23AAEF87005DB1D3 /* CalendarRowView.swift */; };
 		31F69F2D23AAF03B005DB1D3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F69F2C23AAF03B005DB1D3 /* DateExtension.swift */; };
+		31F69F2F23ABF8DA005DB1D3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 31F69F2E23ABF8DA005DB1D3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		31F69F2823AAEEFD005DB1D3 /* GetCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCalendar.swift; sourceTree = "<group>"; };
 		31F69F2A23AAEF87005DB1D3 /* CalendarRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRowView.swift; sourceTree = "<group>"; };
 		31F69F2C23AAF03B005DB1D3 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		31F69F2E23ABF8DA005DB1D3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		31F69F0423AAEDDF005DB1D3 = {
 			isa = PBXGroup;
 			children = (
+				31F69F2E23ABF8DA005DB1D3 /* README.md */,
 				31F69F0F23AAEDDF005DB1D3 /* SwiftUI_Google_Calendar */,
 				31F69F0E23AAEDDF005DB1D3 /* Products */,
 			);
@@ -150,6 +153,7 @@
 			files = (
 				31F69F1D23AAEDE9005DB1D3 /* LaunchScreen.storyboard in Resources */,
 				31F69F1A23AAEDE9005DB1D3 /* Preview Assets.xcassets in Resources */,
+				31F69F2F23ABF8DA005DB1D3 /* README.md in Resources */,
 				31F69F1723AAEDE9005DB1D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
