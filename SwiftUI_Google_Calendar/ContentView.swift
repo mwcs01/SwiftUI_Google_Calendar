@@ -7,10 +7,13 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    @ObservedObject var manager = getCal()
+
     var body: some View {
-        Text("Hello, World!")
+        RowView(data: manager.event)
     }
 }
 

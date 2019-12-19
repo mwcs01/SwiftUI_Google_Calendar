@@ -13,6 +13,11 @@
 		31F69F1723AAEDE9005DB1D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F69F1623AAEDE9005DB1D3 /* Assets.xcassets */; };
 		31F69F1A23AAEDE9005DB1D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F69F1923AAEDE9005DB1D3 /* Preview Assets.xcassets */; };
 		31F69F1D23AAEDE9005DB1D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F69F1B23AAEDE9005DB1D3 /* LaunchScreen.storyboard */; };
+		31F69F2523AAEE7B005DB1D3 /* CalendarJSONhelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F69F2423AAEE7A005DB1D3 /* CalendarJSONhelper.swift */; };
+		31F69F2723AAEEAC005DB1D3 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F69F2623AAEEAC005DB1D3 /* CalendarModel.swift */; };
+		31F69F2923AAEEFD005DB1D3 /* GetCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F69F2823AAEEFD005DB1D3 /* GetCalendar.swift */; };
+		31F69F2B23AAEF87005DB1D3 /* CalendarRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F69F2A23AAEF87005DB1D3 /* CalendarRowView.swift */; };
+		31F69F2D23AAF03B005DB1D3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F69F2C23AAF03B005DB1D3 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		31F69F1923AAEDE9005DB1D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		31F69F1C23AAEDE9005DB1D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31F69F1E23AAEDE9005DB1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31F69F2423AAEE7A005DB1D3 /* CalendarJSONhelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarJSONhelper.swift; sourceTree = "<group>"; };
+		31F69F2623AAEEAC005DB1D3 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		31F69F2823AAEEFD005DB1D3 /* GetCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCalendar.swift; sourceTree = "<group>"; };
+		31F69F2A23AAEF87005DB1D3 /* CalendarRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRowView.swift; sourceTree = "<group>"; };
+		31F69F2C23AAF03B005DB1D3 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				31F69F1B23AAEDE9005DB1D3 /* LaunchScreen.storyboard */,
 				31F69F1E23AAEDE9005DB1D3 /* Info.plist */,
 				31F69F1823AAEDE9005DB1D3 /* Preview Content */,
+				31F69F2423AAEE7A005DB1D3 /* CalendarJSONhelper.swift */,
+				31F69F2623AAEEAC005DB1D3 /* CalendarModel.swift */,
+				31F69F2823AAEEFD005DB1D3 /* GetCalendar.swift */,
+				31F69F2A23AAEF87005DB1D3 /* CalendarRowView.swift */,
+				31F69F2C23AAF03B005DB1D3 /* DateExtension.swift */,
 			);
 			path = SwiftUI_Google_Calendar;
 			sourceTree = "<group>";
@@ -147,8 +162,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				31F69F1123AAEDDF005DB1D3 /* AppDelegate.swift in Sources */,
+				31F69F2D23AAF03B005DB1D3 /* DateExtension.swift in Sources */,
+				31F69F2723AAEEAC005DB1D3 /* CalendarModel.swift in Sources */,
 				31F69F1323AAEDE0005DB1D3 /* SceneDelegate.swift in Sources */,
 				31F69F1523AAEDE0005DB1D3 /* ContentView.swift in Sources */,
+				31F69F2923AAEEFD005DB1D3 /* GetCalendar.swift in Sources */,
+				31F69F2523AAEE7B005DB1D3 /* CalendarJSONhelper.swift in Sources */,
+				31F69F2B23AAEF87005DB1D3 /* CalendarRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
