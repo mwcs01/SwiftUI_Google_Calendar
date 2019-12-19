@@ -21,7 +21,7 @@ Things you will need to get the project to work.
 Once you have your API Key and the public id you need add them to the code.
 
 They both can be found in the GetCalendar.swift file.
-```
+```swift
 func getData() {
   let calendarID = "en.usa#holiday@group.v.calendar.google.com"
   let apiKey = "YourAPIKey"
