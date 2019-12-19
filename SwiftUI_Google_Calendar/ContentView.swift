@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
-    @ObservedObject var manager = getCal()
+    @ObservedObject var manager = GetCal()
 
     var body: some View {
         RowView(data: manager.event)

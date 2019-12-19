@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 import Foundation
 
-class getCal: ObservableObject {
+class GetCal: ObservableObject {
     let objectWillChange = ObservableObjectPublisher()
     var event = EventCalModel() {
         willSet {
@@ -21,7 +21,6 @@ class getCal: ObservableObject {
         getData()
     }
 
-    
     func getData() {
         let testDate = Date()
         let myDateFormatter = DateFormatter()
@@ -43,7 +42,6 @@ class getCal: ObservableObject {
                 if httpResponse.statusCode == 200 {
                     if let data = data {
                         DispatchQueue.main.async {
-                            
                             do {
                                 let test = try JSONDecoder().decode(EventCal.self, from: data)
                                 self.event = EventCalModel(model: test)

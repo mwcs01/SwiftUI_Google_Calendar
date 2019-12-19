@@ -16,22 +16,21 @@ struct RowView: View {
                 HStack {
                     VStack {
                         if item.dateTime != "" {
-                            Text("\(self.GetOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd'T'HH:mm:ssZ", conVertFormate: "MMM", convertDate: item.dateTime))")
-                            Text("\(self.GetOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd'T'HH:mm:ssZ", conVertFormate: "dd", convertDate: item.dateTime))")
-                            Text("\(self.GetOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd'T'HH:mm:ssZ", conVertFormate: "yyyy", convertDate: item.dateTime))")
+                            Text("\(self.getOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd'T'HH:mm:ssZ", conVertFormate: "MMM", convertDate: item.dateTime))")
+                            Text("\(self.getOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd'T'HH:mm:ssZ", conVertFormate: "dd", convertDate: item.dateTime))")
+                            Text("\(self.getOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd'T'HH:mm:ssZ", conVertFormate: "yyyy", convertDate: item.dateTime))")
                         }
                         if item.start != "" {
-                            Text("\(self.GetOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd", conVertFormate: "MMM", convertDate: item.start))")
-                            Text("\(self.GetOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd", conVertFormate: "dd", convertDate: item.start))")
+                            Text("\(self.getOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd", conVertFormate: "MMM", convertDate: item.start))")
+                            Text("\(self.getOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd", conVertFormate: "dd", convertDate: item.start))")
                         }
                     }.padding()
                     HStack{
                         if item.end != "" {
                             VStack {
                                 Text(item.summary)
-                                Text("\(self.GetOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd", conVertFormate: "MM-dd", convertDate: item.start)) - \(self.GetOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd", conVertFormate: "MM-dd", convertDate: item.end))")
+                                Text("\(self.getOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd", conVertFormate: "MM-dd", convertDate: item.start)) - \(self.getOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd", conVertFormate: "MM-dd", convertDate: item.end))")
                             }
-                            
                         } else {
                             Text(item.summary)
                         }
@@ -41,14 +40,12 @@ struct RowView: View {
         }
     }
     
-    func GetOnlyDateMonthYearFromFullDate(currentDateFormate: String , conVertFormate: String , convertDate: String ) -> String {
+    func getOnlyDateMonthYearFromFullDate(currentDateFormate: String, conVertFormate: String, convertDate: String ) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = currentDateFormate
         let finalDate = formatter.date(from: convertDate)
         formatter.dateFormat = conVertFormate
         let dateString = formatter.string(from: finalDate!)
-        
         return dateString
     }
 }
-

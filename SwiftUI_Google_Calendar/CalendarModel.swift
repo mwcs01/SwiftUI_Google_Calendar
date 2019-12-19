@@ -43,9 +43,9 @@ struct EventCalModel {
             } else {
                 var sorted = ""
                 if start == "" {
-                    sorted = GetOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd'T'HH:mm:ssZ", conVertFormate: "dd", convertDate: sort!)
+                    sorted = getOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd'T'HH:mm:ssZ", conVertFormate: "dd", convertDate: sort!)
                 } else if dateTime == "" {
-                    sorted = GetOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd", conVertFormate: "dd", convertDate: sort!)
+                    sorted = getOnlyDateMonthYearFromFullDate(currentDateFormate: "yyyy-MM-dd", conVertFormate: "dd", convertDate: sort!)
                 }
                 self.items.append(Item(id: id, status: status, summary: summary, start: start, dateTime: dateTime, timeZone: timeZone, end: end, sort: sorted))
             }
@@ -53,7 +53,7 @@ struct EventCalModel {
     }
 }
 
-func GetOnlyDateMonthYearFromFullDate(currentDateFormate: String , conVertFormate: String , convertDate: String ) -> String {
+func getOnlyDateMonthYearFromFullDate(currentDateFormate: String, conVertFormate: String, convertDate: String ) -> String {
     let formatter = DateFormatter()
     formatter.dateFormat = currentDateFormate
     let finalDate = formatter.date(from: convertDate)

@@ -6,9 +6,9 @@
 [![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
 
 
-This project was created as an example on the use of pulling data from a pulic Google Calendar and place it in a SwiftUI View.
+This project was created as an example on how to pull data from a public Google Calendar and place it in a SwiftUI List View.
 
-Things you will need to do to get the project to work. 
+Things you will need to get the project to work. 
 1) Get a Google API key from https://console.cloud.google.com/ and Enable Calendar API.
     
     * Under Getting Started goto **Expolore and enable API's**.
@@ -16,9 +16,9 @@ Things you will need to do to get the project to work.
     * Now enable Calendar access by going to **Library** on the same screen. Search for Calendar and select Google Calendar API and enale the API.
 
 2) You will need to get the **shared pulic ID** of the Calendar you want to use. 
-  * The project is currently set to use the public US Holiday Calendar.
+    * The project is currently set to use the public US Holiday Calendar.
 
-Once you have both of those items you need add them to the code.
+Once you have your API Key and the public id you need add them to the code.
 
 They both can be found in the GetCalendar.swift file.
 ```
