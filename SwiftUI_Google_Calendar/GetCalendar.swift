@@ -28,14 +28,22 @@ class GetCal: ObservableObject {
         myDateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         let startMO = testDate.startOfMonth()
         let endMO = testDate.endOfMonth()
-
-        let calendarID = "en.usa%23holiday@group.v.calendar.google.com"
+        let calendarID = "en.usa#holiday@group.v.calendar.google.com"
         let apiKey = "YourAPIKey"
-        let calendarBaseURL = "https://www.googleapis.com/calendar/v3/calendars/"
-        let calendarEndURL = "&showDeleted=false&singleEvents=true"
-        let timeMin = "&timeMin="
-        let timeMax = "&timeMax="
-        let urlFormat = URL(string: calendarBaseURL + calendarID + "/events?key=" + apiKey + timeMin + myDateFormatter.string(from: startMO) + timeMax + myDateFormatter.string(from: endMO) + calendarEndURL)
+
+        var componets = URLComponents()
+        componets.scheme = "https"
+        componets.host = "www.googleapis.com"
+        componets.path = "/calendar/v3/calendars/\(calendarID)/events"
+        componets.queryItems = [
+            URLQueryItem(name: "key", value: apiKey),
+            URLQueryItem(name: "timeMin", value: myDateFormatter.string(from: startMO)),
+            URLQueryItem(name: "timeMax", value: myDateFormatter.string(from: endMO)),
+            URLQueryItem(name: "showDelted", value: "false"),
+            URLQueryItem(name: "singleEvents", value: "true")
+        ]
+        
+        let urlFormat = componets.url
 
         URLSession.shared.dataTask(with: urlFormat!) { (data, response, error) in
             if let httpResponse = response as? HTTPURLResponse {
