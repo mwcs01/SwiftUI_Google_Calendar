@@ -1,3 +1,11 @@
+[![Build Status](https://img.shields.io/badge/platforms-iOS-lightgrey.svg)](https://github.com/Jinxiansen/SwiftUI)
+[![Xcode](https://img.shields.io/badge/Xcode-11.3-blue.svg)](https://developer.apple.com/xcode)
+[![swift-version](https://img.shields.io/badge/swift-5.1-brightgreen.svg)](https://github.com/apple/swift)
+[![swiftui-version](https://img.shields.io/badge/swiftui-brightgreen)](https://developer.apple.com/documentation/swiftui)
+![License](https://img.shields.io/github/license/JakeLin/SwiftWeather.svg?style=flat)
+[![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
+
+
 This project was created as an example on the use of pulling data from a pulic Google Calendar and place it in a SwiftUI View.
 
 Things you will need to do to get the project to work. 
@@ -22,6 +30,6 @@ func getData() {
 
 A feature that was found to be usefull and added to this example was get the first and last day of the current month so that it would only display items for the current month. 
 
-![Example Screen](https://raw.githubusercontent.com/dbadmin/SwiftUI_Google_Calendar/master/ScreenShots/Simulator_Screen_Shot.png)
+<img src="https://raw.githubusercontent.com/dbadmin/SwiftUI_Google_Calendar/master/ScreenShots/Simulator_Screen_Shot.png" width="45%"></img> 
 
 
