@@ -23,10 +23,16 @@ Once you have your API Key and the public id you need add them to the code.
 They both can be found in the GetCalendar.swift file.
 ```
 func getData() {
-  let calendarID = "en.usa%23holiday@group.v.calendar.google.com"
+  let calendarID = "en.usa#holiday@group.v.calendar.google.com"
   let apiKey = "YourAPIKey"
 }
 ```
+If you have any `%` values in your Calendar ID make sure to change them to the repsented value.
+
+* %23 = #
+* %40 = @
+* For a full list of conversions see [HTML URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.asp)
+
 
 A feature that was found to be usefull and added to this example was get the first and last day of the current month so that it would only display items for the current month. 
 
