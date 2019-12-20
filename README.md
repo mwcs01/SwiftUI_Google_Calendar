@@ -3,7 +3,6 @@
 [![swift-version](https://img.shields.io/badge/swift-5.1-brightgreen.svg)](https://github.com/apple/swift)
 [![swiftui-version](https://img.shields.io/badge/swiftui-brightgreen)](https://developer.apple.com/documentation/swiftui)
 ![License](https://img.shields.io/github/license/JakeLin/SwiftWeather.svg?style=flat)
-[![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
 
 
 This project was created as an example on how to pull data from a public Google Calendar and place it in a SwiftUI List View.
