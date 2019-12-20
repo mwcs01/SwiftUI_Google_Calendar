@@ -3,7 +3,6 @@
 [![swift-version](https://img.shields.io/badge/swift-5.1-brightgreen.svg)](https://github.com/apple/swift)
 [![swiftui-version](https://img.shields.io/badge/swiftui-brightgreen)](https://developer.apple.com/documentation/swiftui)
 ![License](https://img.shields.io/github/license/JakeLin/SwiftWeather.svg?style=flat)
-[![Github All Releases](https://img.shields.io/github/downloads/mwcs01/SwiftUI_Google_Calendar/total.svg)]()
 
 
 
